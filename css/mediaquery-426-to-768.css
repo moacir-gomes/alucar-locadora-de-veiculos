@@ -1,0 +1,79 @@
+@media only screen and (min-width: 426px) and (max-width: 768px){
+    .top{
+        display:flex;
+        flex-direction:column;
+    }
+    
+    h3{
+        font-size:28px;
+    }
+
+    .menu ul{
+        width:120px;
+        margin-top:20px;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        gap:10px;
+    }
+
+    .about-us-leave{
+        display:none;
+    }
+
+    .menu a,
+    p{
+        font-size:20px;
+    }
+
+    label,
+    input,
+    select{
+        font-size:20px;
+    }
+
+        /* 1st section 
+            Banner section */
+    .banner,
+    .three-cars{
+       display:none;
+    }
+    
+        /* 2nd section
+            About section */
+    .blue-arrow::before{
+        display:none;
+    }
+
+    .form{
+        width:95%;
+    }
+
+      /* Divider between 2nd section and 3rd section */
+
+    .divider{
+        height:90px;
+    }
+
+    .contato{
+        font-size:42px;
+    }
+
+    .user{
+        width:300px;
+    }
+    
+    .password{
+        width:340px;
+    }
+
+    .btn{
+        font-size:20px;
+    }
+
+    /* Whatsapp icon */
+    .whatsapp-icon img{
+        width:76px;
+        height:76px;
+    }
+}

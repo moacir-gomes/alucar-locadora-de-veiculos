@@ -1,0 +1,62 @@
+@media only screen and (min-width: 1025px) 
+and (max-width: 1440px){
+    .menu a,
+    p{
+        font-size:24px;
+    }
+
+    label,
+    input,
+    select{
+        font-size:24px;
+    }
+    
+    .left-border{
+        text-align:left;
+    }
+    
+    .blue-arrow::before{
+    content:"";
+    background-image:url("../assets/seta-azul-direita-fundo-transparente-36x20.png");
+    width:36px;
+    height:24px;
+    background-size:100% 100%;
+    background-repeat:no-repeat;
+    position:absolute;
+    left:2%;    
+    }
+
+    .divider{
+        height:110px;
+    }
+
+    .cpf{
+        width:310px;
+    }
+
+    .contato{
+        font-size:42px;
+    }
+
+    .cnh-number{
+        width:330px;
+    }
+
+    .user{
+        width:355px;
+    }
+    
+    .password{
+        width:400px;
+    }
+
+    .btn{
+        font-size:24px;
+    }
+    
+    /* Whatsapp icon */
+    .whatsapp-icon img{
+        width: 96px;
+        height: 96px;
+    }
+}

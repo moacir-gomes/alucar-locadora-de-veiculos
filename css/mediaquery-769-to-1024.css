@@ -1,0 +1,51 @@
+@media only screen and (min-width: 769px) and 
+(max-width: 1024px){
+    h3{
+        font-size:30px;
+    }
+
+    .menu a,
+    p{
+        font-size:22px;
+    }
+
+    label,
+    input,
+    select{
+        font-size:22px;
+    }
+
+        /* 2nd section
+            About section */
+        .blue-arrow::before{
+            display:none;
+    }
+        
+        /* Divider between 2nd section and 3rd section */
+    
+    .divider{
+    height:100px;
+    }
+    
+    .cpf{
+        width:290px;
+    }
+
+    .contato{
+        font-size:44px;
+    }
+
+    .cnh-number{
+       width:320px; 
+    }
+
+    .btn{
+        font-size:22px;
+    }
+
+    /* Whatsapp icon */
+    .whatsapp-icon img{
+        width:84px;
+        height:84px;
+    }
+}

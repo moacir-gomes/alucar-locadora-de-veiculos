@@ -1,0 +1,351 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:sans-serif;
+    text-decoration:none;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background-color:lightgrey;
+    width:100%;
+}
+
+
+header{
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+}
+
+header h1{
+    font-size:60px;
+    padding-left:20px;
+}
+
+.menu a{
+    font-size:26px;
+    padding:5px 10px;
+    transition:2s;
+}
+
+ul{
+    list-style-type:none;
+    display:flex;
+    gap:80px;
+}
+
+.menu a:hover{
+    transition:0.6s;
+    color:yellow;
+    background-color:darkblue;
+    border-radius:10px;
+}
+
+
+h3{
+    font-size:30px;
+    margin:30px 0;
+    text-align:center;
+}
+
+h4{
+    font-size:22px;
+    font-weight:lighter;
+}
+
+p{
+    font-size:24px;
+}
+
+.banner{
+    width:100%;
+    height:90vh;
+    background-image:url("../assets/capa.jpg");
+    background-size:cover;
+    background-position:center;   
+}
+
+.filter{
+    width:100%;
+    height:40vh;
+    background-color:#000000c4;
+    display:flex;
+    justify-content:flex-end;
+    align-items:center;
+}
+
+            /* 2nd section
+                About section */
+.about{
+    margin:30px 0;
+}
+
+.left-border{
+    width:1024px;
+    margin:0 auto;
+}
+
+.about p{
+    text-align:left;
+}
+
+.blue-arrow::before{
+    content:"";
+    background-image:url("../assets/seta-azul-direita-fundo-transparente-36x20.png");
+    width:36px;
+    height:24px;
+    background-size:100% 100%;
+    background-repeat:no-repeat;
+    position:absolute;
+    left:2%; 
+}
+
+            /*Divider */
+.divider{
+    height:120px;
+    background-color:red;
+    color:white;
+    font-weight:900;
+    margin-bottom:30px;
+    display:flex;
+    align-items:center;
+}
+
+.blue-fieldset{
+    border:1px solid blue;
+}
+
+.green-fieldset{
+    border:1px solid darkgreen;
+}
+
+.orangered-fieldset{
+    border:1px solid orangered;
+}
+
+.contato{
+    width:100%;
+    background:linear-gradient(to right,green,darkblue, green);
+    text-align:center;
+    font-size:50px;
+}
+
+.limita-largura{
+    width:90%;
+    margin:0 auto;
+    text-align:center;
+}
+
+.three-cars{
+    display:flex;
+    gap:3px;
+    flex-wrap:wrap;
+}
+
+.three-cars img{
+    width:calc((100% / 3) - 9px);
+    margin:20px 3px 20px 0;
+}
+
+.user-registration{
+    font-size:22px;
+}
+
+.left-text{
+    text-align:left;
+}
+
+.margin-bottom{
+    margin-bottom:20px;
+}
+
+legend{
+    margin-bottom:10px;
+    color:darkblue;
+    font-weight:bold;
+    font-size:26px;
+}
+
+label{
+    font-size:22px;
+}
+
+.titles{
+    width:40%;
+    padding-right:40px;
+}
+
+.titles h1,
+.titles h2{
+    color:white;
+    font-size:60px;
+    text-align:right;
+}
+
+.form{
+    width:100%;
+    padding-left:10px;
+}
+
+.whatsapp-doubt{
+    color:blue;
+    margin:30px auto;
+    padding-left:10px;
+}
+
+input::placeholder{
+    color:red;
+}
+
+input,
+select{
+    color:blue;
+    font-size:20px;
+    margin-bottom:10px;
+}
+
+fieldset{
+    width:100%;
+    margin-bottom:20px;
+    border-radius:10px;
+   padding:0 5px;
+    display:flex;
+    flex-direction:column;
+}
+
+.user-name{
+    width:90%;
+    text-transform:uppercase;
+}
+
+.cpf{
+    width:270px;
+}
+
+.data-nascimento{
+    width:200px;
+}
+
+.sex{
+    margin:15px 0;
+}
+
+.sex-options{
+    display:flex;
+    flex-direction:column;
+    margin-left:5px;
+}
+
+.sex input{
+    margin:0 5px;
+}
+
+.telefone{
+    width:250px;
+}
+
+.email{
+    width:300px;
+}
+
+.cnh-number{
+    width:320px;
+}
+
+.cnh-expiration-date{
+    width:200px;
+}
+
+.user{
+    width:350px;
+}
+
+.password{
+    width:390px;
+}
+
+.short-width-select{
+    width:300px;
+}
+
+.btn{
+    font-size:20px;
+    padding:5px 10px;
+    border-radius:10px;
+    background-color:darkgoldenrod;
+    box-shadow:5px 5px 5px 2px blue;
+    font-weight:900;
+    transition:0.5s;
+}
+
+footer{
+    padding-bottom:20px;
+}
+
+.open{
+    color:darkgreen;
+    font-weight:900;
+}
+
+footer p{
+    line-height:2em;
+}
+
+.alucar{
+    font-size:40px;
+    margin:40px 0;
+    padding:10px 0;
+    color:white;
+    background:black;
+    border-radius:10px;
+}
+
+.alucar::after{
+    content:"";
+    background-image:url("../assets/brasil-flag-57x40.png");
+    width:57px;
+    height:40px;
+    margin-left:5px;
+    background-size:100% 100%;
+    position:absolute;
+}
+
+.divider-2{
+    height:5px;
+    background:linear-gradient(to right, blue, green, yellow);    
+    margin-bottom:10px;
+}
+
+.moacir{
+    color:darkblue;
+    transition:0.5s;
+}
+
+.moacir:hover{
+    color:white;
+    background-color:black;
+    transition:0.5s;
+    padding:2px 5px;
+    border-radius:10px;
+}
+
+button:hover{
+    color:lightblue;
+    background-color:darkblue;
+    box-shadow:5px 5px 5px 2px brown;
+    transition:0.5s;
+}
+
+/* Whatsapp icon */
+.whatsapp-icon img{
+    position:fixed;
+    right:0;
+    bottom:0;
+}
+
+

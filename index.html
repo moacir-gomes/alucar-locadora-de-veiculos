@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Alucar car rental">
+        <meta name="viewport" content="width=device-width, 
+            initial-scale=1.0>">
+        <meta name="robots" content="index, nofollow">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <!-- Until 425px screens CSS file -->
+        <link rel="stylesheet" href="css/mediaquery-425.css"
+        type="text/css">
+        <!-- 426px to 768px screens CSS file --> 
+        <link rel="stylesheet" href="css/mediaquery-426-to-768.css"
+        type="text/css">
+        <!-- 769px to 1024px screens CSS file -->
+        <link rel="stylesheet" href="css/mediaquery-769-to-1024.css" 
+        type="text/css">
+        <!-- 1025px to 1440px screens CSS file -->
+        <link rel="stylesheet" href="css/mediaquery-1025-to-1440.css" 
+        type="text/css">
+        <title>Alucar car rental</title>
+    </head>
+    <body>
+        <header class="top" id="top">
+            <h1>Alucar</h1>
+            <nav class="menu">
+                <ul>
+                    <li class="about-us-leave"><a href="#about">Sobre nós</a></li>
+                    <li><a href="#registration">Cadastro</a></li>
+                    <li><a href="#cars">Carros</a></li>
+                </ul>
+            </nav>   
+        </header>
+        <main>
+                <!-- 1st section 
+                    Banner section -->
+            <section class="banner">
+                <div class="filter">
+                    <div class="titles">
+                        <h1>AluCar</h1>
+                        <h2> Aluguel de carros</h2>
+                    </div>
+                </div>
+            </section>
+
+                <!-- 2nd section 
+                    About us section -->
+            <section class="about" id="about">
+                <div class="limita-largura">
+                    <h3>Sobre nós</h3>
+                    <p>Há 45 anos atuando na área de locação de veículos com segurança e garantia de satisfação. Temos os melhores preços e modelos do mercado.
+                    </p>
+                </div>
+                <div class="three-cars limita-largura">
+                    <!-- First car -->
+                    <img src="assets/img1.jpg" alt="White car" 
+                    title="White car">
+                    <!-- Second car -->
+                    <img src="assets/img2.jpg" alt="Black pickup" 
+                    title="Black pickup">
+                    <!-- Third car -->
+                    <img src="assets/img3.jpg" alt="Red car"
+                     title="Red car">
+                </div>
+                <div class="left-border limita-largura">
+                    <!-- Three paragraphs with left-border -->
+                    <p class="blue-arrow">O compromisso da AluCar é com a qualidade.</p>
+                    <p class="blue-arrow">Os melhores carros estão aqui.</p>
+                    <p class="blue-arrow">Assistência 24h.</p>
+                </div>
+            </section>
+
+            <!-- Divider between 2nd section and 3rd section -->
+            <div class="divider">
+                <p></p>
+                <p class="contato">Contato</p>
+                <p></p>
+            </div>
+
+                    <!-- User registration -->
+            <section class="limita-largura left-text" id="registration">
+                <h3>Cadastro</h3>
+                <p class="margin-bottom">Preencha os campos abaixo e analisaremos 
+                    seus dados. A análise será feita em até 2h. Uma mensagem pelo 
+                    Whatsapp e para o seu e-mail será enviada informando se o seu 
+                    cadastro foi aprovado. Sendo aprovada a análise também informaremos 
+                    quando o carro que você quer alugar estará disponível. Caso o modelo 
+                    esteja alugado forneceremos outras opções de carro. 
+                </p>
+                <!-- Form - There are 3 fieldsets -->
+                <form class="form" method="post" 
+                    action="https://www.devmedia.com.br/codigos/formularios/aula9/">
+                    <fieldset class="blue-fieldset">
+                        <!-- Name -->
+                        <legend>Dados pessoais</legend>
+                        <label>Nome completo:</label>
+                        <input class="user-name" type="text" name="nome" required 
+                          placeholder="Digite seu nome completo">
+                        <!-- CPF -->
+                        <label>CPF:</label>
+                        <input class="cpf" type="number" name="cpf" min="00000000000" 
+                          max="99999999999" required 
+                          placeholder="O CPF possui 11 dígitos">
+                        <!-- Date of birth -->
+                        <label>Data de nascimento:</label>
+                        <input class="data-nascimento" type="date" 
+                        name="data_nascimento" required>
+                        <div class="sex">
+                            <!-- Sexo -->
+                            <h4 class="sex-title">Sexo:</h4>
+                            <div class="sex-options">
+                                         <!-- Masculino -->
+                                <div>
+                                    <input type="radio" id="sexo-masculino" name="sexo" 
+                                    value="masculino" required>
+                                    <label for="sexo-masculino">Masculino</label>
+                                </div>
+                                        <!-- Feminino -->
+                                <div>
+                                    <input type="radio" id="sexo-feminino" name="sexo" 
+                                    value="feminino">
+                                    <label for="sexo-feminino">Feminino</label>
+                                </div>
+                                    <!-- Prefiro não responder -->
+                                <div>
+                                    <input type="radio" id="prefiro-nao-responder" name="sexo" 
+                                    value="prefiro-nao-responder">
+                                    <label for="prefiro-nao-responder">Prefiro não responder</label>
+                                </div>
+                            </div>
+                        </div> 
+                        <!-- Telefone -->
+                        <label>Telefone:</label>
+                        <input class="telefone" type="tel" name="telefone" required
+                        placeholder="(XX) XXXXX-XXXXX">
+                        <!-- E-mail -->
+                        <label>E-mail:</label>
+                        <input class="email" type="email" name="e-mail" required
+                        placeholder="exemplo@provedor.com">
+                    </fieldset>
+
+                        <!-- CNH -->
+                    <fieldset class="blue-fieldset">
+                        <legend>CNH</legend>
+                        <label>Número do registro:</label>
+                        <input class="cnh-number" type="number" name="numero_registro" 
+                          placeholder="Infome o número da sua CNH" required>
+                        <!-- Validade -->
+                        <label>Validade:</label>
+                        <input class="cnh-expiration-date" type="date" 
+                          name="validade" required>
+                    </fieldset>
+                        <!-- Criação de usuário e senha -->
+                    <h3>Crie seu usuário e senha</h3>
+                    <fieldset class="green-fieldset">
+                        <legend>Usuário e senha</legend>
+                        <!-- Usuário: -->
+                        <label>Usuário:</label>
+                        <input class="user" type="text" name="user" maxlenght="10"
+                        placeholder="O usuário terá até 10 caracteres" required>
+                        <!-- Senha -->
+                        <label>Senha:</label>
+                        <input class="password" type="password" name="password" 
+                        minlenght="8" maxlenght="12" required
+                        placeholder="A senha será entre 8 e 12 caracteres">
+                        <!-- Repita a senha -->
+                        <label>Repita a senha:</label>
+                        <input class="password" type="password" name="password-repeat" required 
+                        minlenght="8" maxlenght="12" 
+                        placeholder="A senha será entre 8 e 12 caracteres">
+                    </fieldset>
+                        <!-- Choose car -->
+                    <h3 id="cars">Qual carro você gostaria de alugar?</h3>
+                    <fieldset class="orangered-fieldset left-text user-registration">
+                            <!-- Car model -->
+                        <legend>Carro</legend>
+                        <label>Modelo do carro:</label>
+                        <select required class="short-width-select" name="carro"> 
+                            <option value="">Escolha um carro</option>
+                            <!-- Volkswagen group -->
+                            <optgroup label="Volkswagen">
+                                <option value="gol">Gol</option>
+                                <option value="golf">Golf</option>
+                                <option value="fox">Fox</option>
+                            </optgroup>
+                            <!-- Fiat group -->
+                            <optgroup label="Fiat">
+                                <option value="uno">Uno</option>
+                                <option value="siena">Siena</option>
+                                <option value="palio">Palio</option>
+                            </optgroup>
+                            <!-- Nissan group -->
+                            <optgroup label="Nissan">
+                                <option value="frontier">Frontier    
+                                </option>
+                                <option value="versa">Versa
+                                </option>
+                                <option value="skyline">Skyline GT-R</option>
+                            </optgroup>
+                            <!-- Chinese cars -->
+                            <optgroup label="BYD">
+                                <option value="dolphin">Dolphin</option>
+                                <option value="song">Song</option>
+                                <option value="yuan">Yuan</option>
+                            </optgroup>
+                        </select>
+
+                         <!-- Year of the car -->
+                        <label>Ano do carro:</label>
+                        <select class="short-width-select" name="car-year" required>
+                            <option value="">Escolha o ano do carro</option>
+                            <optgroup label="De 2024 a 2020">
+                                <option value="2024">2024</option>
+                                <option value="2023">2023</option>
+                                <option value="2022">2022</option>
+                                <option value="2021">2021</option>
+                                <option value="2020">2020</option>
+                            </optgroup>
+                            <!-- De 2019 a 2015 -->
+                            <optgroup label="De 2019 a 2015">
+                                <option value="2019">2019</option>
+                                <option value="2018">2018</option>
+                                <option value="2017">2017</option>
+                                <option value="2016">2016</option>
+                                <option value="2015">2015</option>
+                            </optgroup>
+                        </select>      
+                    </fieldset>
+                    <p class="whatsapp-doubt">Caso tenha dúvidas sobre como preencher nosso cadastro você pode entrar em contato através de nosso Whatsapp que faremos o seu cadastro.
+                    </p>
+
+                    <button class="btn" type="submit">Envie meus dados</button>
+                </form>
+            </section>
+        </main>
+                    <!-- Footer -->
+        <footer class="limita-largura">
+            <a href="#top"><h2 class="alucar">Alucar</h2></a>
+            <p>Razão social: Alucar locadora de veículos LTDA.</p>
+            <p>Av. Zé da Silva, 102 - Edifício Pablo Gomes - 2º andar - loja 22 - Centro - Maceió - AL</p>
+            <p class="open">Funcionamos todos os dias 24h por dia.</p>
+            <p>Telefone: (82)987654321</p>
+            <p>CNPJ: 22.333.333/0001-22</p>
+            <p>ALUCAR&copy; - Todos os direitos reservados.</p>
+        </footer> 
+                <!-- Divider -->
+        <div class="divider-2 limita-largura"></div>
+                <!-- Developed by -->
+        <section class="limita-largura">
+            <p>Desenvolvido por <a class="moacir" href="https://github.com/moacir-gomes?tab=repositories" target="_blank">
+                Moacir Gomes</a></p>
+        </section>
+                
+                <!--Whatsapp icon -->
+        <section class="whatsapp-icon">
+            <a href="https://wa.me/5582987654321/?text=Mande%20uma%20mensagem%20para%20a%20ALUCAR%20-%20a%20melhor%20locadora%20de%20veículos%20do%20mundo" 
+            target="_blank" title="Envie uma mensagem à ALUCAR pelo Whatsapp">
+            <img src="assets/whatsapp-logo-128x128_resized.png" 
+            alt="Whatsapp da Alucar - locadora de veículos" >
+            </a>
+        </section>
+    </body>
+</html>
